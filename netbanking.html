@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Net Banking</title>
+
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <!-- Login form -->
+  <form action="/login.php" method="post">
+    <div class="container">
+      <h1>Net Banking</h1>
+
+      <!-- Account number -->
+      <div class="row">
+        <div class="col-50">
+          <label for="accountNumber">Account number</label>
+          <input type="text" id="accountNumber" name="accountNumber" placeholder="1234567890">
+        </div>
+      </div>
+
+      <!-- Password -->
+      <div class="row">
+        <div class="col-50">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="********">
+        </div>
+      </div>
+
+      <!-- Submit button -->
+      <div class="row">
+        <div class="col-50">
+          <input type="submit" value="Login">
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- Account options -->
+  <div class="account-options">
+    <ul>
+      <li><a href="/transfer-money.php">Transfer money</a></li>
+      <li><a href="/pay-bills.php">Pay bills</a></li>
+      <li><a href="/check-balance.php">Check balance</a></li>
+      <li><a href="/view-statement.php">View statement</a></li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Card Payment Portal</title>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Payment form -->
+    <form action="/action_page.php" method="post">
+      <div class="container1">
+        <h2>Online Card Payment</h2>
+        <div class="image">
+          <img src="./images/atmcard.png" alt="" width="300" height="140" />
+        </div>
+        <!-- Name on card -->
+        <div class="row">
+          <div class="col-50">
+            <label for="name">Name on card</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" />
+          </div>
+        </div>
+
+        <!-- Credit card number -->
+        <div class="row">
+          <div class="col-50">
+            <label for="cardNumber">Credit card number</label>
+            <input
+              type="text"
+              id="cardNumber"
+              name="cardNumber"
+              placeholder="1234-5678-9012-3456"
+            />
+          </div>
+        </div>
+
+        <!-- Expiration date -->
+        <div class="row">
+          <div class="col-25">
+            <label for="expMonth">Expiration month</label>
+            <input type="text" id="expMonth" name="expMonth" placeholder="MM" />
+          </div>
+          <div class="col-25">
+            <label for="expYear">Expiration year</label>
+            <input type="text" id="expYear" name="expYear" placeholder="YYYY" />
+          </div>
+        </div>
+
+        <!-- CVV code -->
+        <div class="row">
+          <div class="col-25">
+            <label for="cvv">CVV code</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123" />
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <div class="row">
+          <div class="col-50">
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
